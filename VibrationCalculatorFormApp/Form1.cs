@@ -102,7 +102,30 @@ namespace VibrationCalculatorFormApp {
                 TAcceleration_dB.Text = VibroCalc.Acceleration.Get(SignalParametrType.dB).ToString();
                 TAcceleration_dB.Access = Access.UnLock;
             }
-           
+            if (isChangeable != TextboxIsChangeable.Velocity)
+            {
+                TVelocity.Access = Access.Blocked;
+                TVelocity.Text = VibroCalc.Velocity.Get(VelType).ToString();
+                TVelocity.Access = Access.UnLock;
+            }
+            if (isChangeable != TextboxIsChangeable.Velocity_dB)
+            {
+                TVelocity_dB.Access = Access.Blocked;
+                TVelocity_dB.Text = VibroCalc.Velocity.Get(SignalParametrType.dB).ToString();
+                TVelocity_dB.Access = Access.UnLock;
+            }
+            if (isChangeable != TextboxIsChangeable.Displacement)
+            {
+                TDisplacement.Access = Access.Blocked;
+                TDisplacement.Text = VibroCalc.Displacement.Get(DisType).ToString();
+                TDisplacement.Access = Access.UnLock;
+            }
+            if (isChangeable != TextboxIsChangeable.Displacement_dB)
+            {
+                TDisplacement_dB.Access = Access.Blocked;
+                TDisplacement_dB.Text = VibroCalc.Displacement.Get(SignalParametrType.dB).ToString();
+                TDisplacement_dB.Access = Access.UnLock;
+            }           
         }
 
         private void Form1_Load(object sender, EventArgs e) {
