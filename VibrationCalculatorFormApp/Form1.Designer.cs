@@ -356,6 +356,7 @@ namespace VibrationCalculatorFormApp {
             this.TDisplacement.Name = "TDisplacement";
             this.TDisplacement.Size = new System.Drawing.Size(86, 20);
             this.TDisplacement.TabIndex = 7;
+            this.TDisplacement.TextChanged += new System.EventHandler(this.TDisplacement_TextChanged);
             // 
             // TDisplacement_dB
             // 
@@ -363,6 +364,7 @@ namespace VibrationCalculatorFormApp {
             this.TDisplacement_dB.Name = "TDisplacement_dB";
             this.TDisplacement_dB.Size = new System.Drawing.Size(89, 20);
             this.TDisplacement_dB.TabIndex = 7;
+            this.TDisplacement_dB.TextChanged += new System.EventHandler(this.TDisplacement_dB_TextChanged);
             // 
             // label10
             // 
@@ -429,6 +431,7 @@ namespace VibrationCalculatorFormApp {
             this.TVelocity.Name = "TVelocity";
             this.TVelocity.Size = new System.Drawing.Size(86, 20);
             this.TVelocity.TabIndex = 7;
+            this.TVelocity.TextChanged += new System.EventHandler(this.TVelocity_TextChanged);
             // 
             // TVelocity_dB
             // 
@@ -436,6 +439,7 @@ namespace VibrationCalculatorFormApp {
             this.TVelocity_dB.Name = "TVelocity_dB";
             this.TVelocity_dB.Size = new System.Drawing.Size(89, 20);
             this.TVelocity_dB.TabIndex = 7;
+            this.TVelocity_dB.TextChanged += new System.EventHandler(this.TVelocity_dB_TextChanged);
             // 
             // label8
             // 
