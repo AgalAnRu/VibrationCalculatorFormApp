@@ -1,0 +1,246 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VibroMath</name>
+    </assembly>
+    <members>
+        <member name="T:VibroMath.VibroCalc">
+            <summary>
+            Предоставляет:
+            поля - параметры синусоидальной вибрации, находящиеся в математической зависимости;
+            метод - вызывающий пересчет полей в зависимости от типа задаваемого параметра и его значения.
+            </summary>
+        </member>
+        <member name="P:VibroMath.VibroCalc.Voltage">
+            <summary>
+            Напряжение.
+            </summary>
+        </member>
+        <member name="P:VibroMath.VibroCalc.Acceleration">
+            <summary>
+            Виброускорение.
+            </summary>
+        </member>
+        <member name="P:VibroMath.VibroCalc.Velocity">
+            <summary>
+            Виброскорость.
+            </summary>
+        </member>
+        <member name="P:VibroMath.VibroCalc.Displacement">
+            <summary>
+            Виброперемещние.
+            </summary>
+        </member>
+        <member name="P:VibroMath.VibroCalc.Sensitivity">
+            <summary>
+            Чувствительность.
+            </summary>
+        </member>
+        <member name="P:VibroMath.VibroCalc.Frequency">
+            <summary>
+            Частота.
+            </summary>
+        </member>
+        <member name="M:VibroMath.VibroCalc.CalcAll(VibroMath.Acceleration)">
+            <summary>
+            Пересчитывает все параметры в зависимости от типа поданного значения.
+            Принимает экземпляры классов: Voltage,  Acceleration, Velocity, Displacement, Frequency
+            </summary>
+            <param name="acceleration"></param>
+        </member>
+        <member name="M:VibroMath.VibroCalc.CalcAll(VibroMath.Frequency,VibroMath.Freeze)">
+            <summary>
+            Пересчитывает все параметры относитлеьно замароженного параметра указанно в "freeze"
+            </summary>
+            <param name="frequency"></param>
+            <param name="freeze"></param>
+        </member>
+        <member name="M:VibroMath.VibroCalc.CalcAll(VibroMath.Sensitivity,VibroMath.Freeze)">
+            <summary>
+            Пересчитывает все параметры относитлеьно замароженного параметра указанно в "freeze"
+            </summary>
+            <param name="sensitivity"></param>
+            <param name="freeze"></param>
+        </member>
+        <member name="T:VibroMath.Voltage">
+            <summary>
+            Напряжение.
+            </summary>
+        </member>
+        <member name="M:VibroMath.Voltage.Get_dB">
+            <summary>
+            Возвращает значение в дБ.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VibroMath.Voltage.Set_dB(System.Double)">
+            <summary>
+            Присваивает значение параметру, принимает дБ.
+            </summary>
+            <param name="dB"></param>
+        </member>
+        <member name="T:VibroMath.Acceleration">
+            <summary>
+            Виброускорение.
+            </summary>
+        </member>
+        <member name="T:VibroMath.Velocity">
+            <summary>
+            Виброскорость.
+            </summary>
+        </member>
+        <member name="T:VibroMath.Displacement">
+            <summary>
+            Виброперемещение.
+            </summary>
+        </member>
+        <member name="T:VibroMath.Sensitivity">
+            <summary>
+            Коэффициент преобразования датчика.
+            
+            </summary>
+        </member>
+        <member name="F:VibroMath.Sensitivity.G">
+            <summary>
+            Единица измерения вибрационного ускорения принятая равной 9,807 м/с²
+            </summary>
+        </member>
+        <member name="M:VibroMath.Sensitivity.Get_mV_G">
+            <summary>
+            Возвращает значение в мВ/g
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VibroMath.Sensitivity.Set_mV_G(System.Double)">
+            <summary>
+            Приваивает значение параметру. Принимает мВ/g.
+            </summary>
+            <param name="mV_G"></param>
+        </member>
+        <member name="M:VibroMath.Sensitivity.Get_mV_MS2">
+            <summary>
+            Возвращает значение параметра в мВ/м∙сˉ²
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VibroMath.Sensitivity.Set_mV_MS2(System.Double)">
+            <summary>
+            Присваивает значение параметру. Принимает мВ/м∙сˉ²
+            </summary>
+            <param name="mV_MS2"></param>
+        </member>
+        <member name="M:VibroMath.Sensitivity.Get(SensitivityType)">
+            <summary>
+            Возвращает чувствительность в зависимости от заданного типа
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="T:VibroMath.Frequency">
+            <summary>
+            Частота
+            </summary>
+        </member>
+        <member name="M:VibroMath.Frequency.#ctor">
+            <summary>
+            Возвращает значение в Гц.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VibroMath.Frequency.Set_Hz(System.Double)">
+            <summary>
+            Присваивает значение параметру. Прнимает Гц.
+            </summary>
+            <param name="hz"></param>
+        </member>
+        <member name="M:VibroMath.Frequency.Get_RPM">
+            <summary>
+            Возвращает значение в Об/мин.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VibroMath.Frequency.Set_RPM(System.Double)">
+            <summary>
+            Присваивает значение параметру. Прнимает Об/мин.
+            </summary>
+            <param name="RPM"></param>
+        </member>
+        <member name="M:VibroMath.Frequency.Get(FrequencyType)">
+            <summary>
+            Возвращает частоту в зависимости от заданного типа
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VibroMath.SignalsParameter.SetRMS(System.Double)">
+            <summary>
+            Присваивает значение параметру, принимает СКЗ
+            </summary>
+            <param name="RMS">значение СКЗ</param>
+        </member>
+        <member name="M:VibroMath.SignalsParameter.SetPIK(System.Double)">
+            <summary>
+            Присваивает значение параметру, принимает ПИК
+            </summary>
+            <param name="PIK">значение ПИК</param>
+        </member>
+        <member name="M:VibroMath.SignalsParameter.SetPIK_PIK(System.Double)">
+            <summary>
+            Присваивает значение параметру, принимает Размах
+            </summary>
+            <param name="PIK_PIK">значение Разамх</param>
+        </member>
+        <member name="M:VibroMath.SignalsParameter.GetRMS">
+            <summary>
+            Возвращает СКЗ параметра
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VibroMath.SignalsParameter.GetPIK">
+            <summary>
+            Возвращает ПИК параметра
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VibroMath.SignalsParameter.GetPIK_PIK">
+            <summary>
+            Возвращает Размах параметра
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VibroMath.VibroParametr.Get_dB">
+            <summary>
+            Возвращает значение в дБ
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VibroMath.VibroParametr.Set_dB(System.Double)">
+            <summary>
+             Присваивает значение параметру, принимает значение в дБ
+            </summary>
+            <param name="dB"></param>
+        </member>
+        <member name="M:VibroMath.VibroParametr.Get(SignalParametrType)">
+            <summary>
+            Возвращает параметр в зависимости от указанного типа
+            </summary>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FrequencyType">
+            <summary>
+            Единицы измерения частоты вращения
+            </summary>
+        </member>
+        <member name="T:SensitivityType">
+            <summary>
+            Единицы измерения частоты вращения
+            </summary>
+        </member>
+        <member name="T:SignalParametrType">
+            <summary>
+            Параметр сигнала
+            </summary>
+        </member>
+    </members>
+</doc>
