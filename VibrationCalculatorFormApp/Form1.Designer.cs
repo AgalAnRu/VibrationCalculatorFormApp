@@ -79,7 +79,7 @@ namespace VibrationCalculatorFormApp {
             this.groupBox2.Controls.Add(this.TSensitivity);
             this.groupBox2.Controls.Add(this.radSensitivityM);
             this.groupBox2.Controls.Add(this.radSensitivityG);
-            this.groupBox2.Location = new System.Drawing.Point(75, 42);
+            this.groupBox2.Location = new System.Drawing.Point(12, 42);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(225, 95);
             this.groupBox2.TabIndex = 17;
@@ -125,7 +125,7 @@ namespace VibrationCalculatorFormApp {
             this.groupBox3.Controls.Add(this.radFrequencyRPM);
             this.groupBox3.Controls.Add(this.radFrequencyHw);
             this.groupBox3.Controls.Add(this.TFrequency);
-            this.groupBox3.Location = new System.Drawing.Point(310, 42);
+            this.groupBox3.Location = new System.Drawing.Point(247, 42);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(170, 95);
             this.groupBox3.TabIndex = 18;
@@ -251,7 +251,7 @@ namespace VibrationCalculatorFormApp {
             this.groupBox1.Controls.Add(this.GBDisplacement);
             this.groupBox1.Controls.Add(this.gBVelocity);
             this.groupBox1.Controls.Add(this.gBAcceleration);
-            this.groupBox1.Location = new System.Drawing.Point(75, 143);
+            this.groupBox1.Location = new System.Drawing.Point(12, 143);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(405, 364);
             this.groupBox1.TabIndex = 13;
@@ -529,12 +529,12 @@ namespace VibrationCalculatorFormApp {
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(519, 536);
+            this.ClientSize = new System.Drawing.Size(429, 536);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "VAST Vibration Calculator";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
